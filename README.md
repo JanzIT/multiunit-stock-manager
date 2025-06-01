@@ -1,40 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Multi-Store Stock Manager
 
-## Getting Started
+A mobile-first inventory management platform for multi-unit retail operations. Built with Next.js, TypeScript, MongoDB, and CSS Modules.
 
-First, run the development server:
+## 🔥 Features
+
+- 🔐 Role-based authentication (Admin and Employee)
+- 📦 Store-specific stock management
+- 📊 Consolidated inventory dashboard for admins
+- 🛒 Smart purchase suggestions based on consumption
+- 🚨 Alerts for low stock thresholds
+- 📱 Mobile-friendly UI optimized for in-store use
+
+## 🧰 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- [CSS Modules](https://nextjs.org/docs/basic-features/built-in-css-support)
+- [Figma (UI/UX)](https://figma.com)
+
+## 📁 Folder Structure
+
+/pages
+/components
+/styles
+/api
+/models
+/services
+/lib
+/hooks
+/public
+
+shell
+Copiar
+Editar
+
+## 🚀 Getting Started
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔐 Environment Variables
+Create a .env.local file in the root:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+❗ Never commit .env.local – it is ignored by Git for security.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can use the .env.example provided in this repo to know which environment variables are required.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+📦 Deployment
+This project is ready for deployment with Vercel. Connect your GitHub repo and add environment variables directly in the dashboard.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+👤 Author
+Renan Janz Hargreaves Vieira
+LinkedIn • Portfolio
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📜 License
+MIT
 
-## Learn More
+yaml
+Copiar
+Editar
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## ✅ 2. `.env.example`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📌 Crie um arquivo chamado `.env.example` na raiz do seu projeto com:
 
-## Deploy on Vercel
+```env
+# Example environment configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+MONGODB_URI=your_mongodb_connection_string_here
+JWT_SECRET=your_jwt_secret_here
