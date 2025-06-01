@@ -31,9 +31,6 @@ A mobile-first inventory management platform for multi-unit retail operations. B
 /hooks
 /public
 
-shell
-Copiar
-Editar
 
 ## 🚀 Getting Started
 
@@ -63,15 +60,11 @@ LinkedIn • Portfolio
 📜 License
 MIT
 
-yaml
-Copiar
-Editar
-
 ---
 
 ## ✅ 2. `.env.example`
 
-📌 Crie um arquivo chamado `.env.example` na raiz do seu projeto com:
+📌 Create a file named `.env.example` in the root with:
 
 ```env
 # Example environment configuration
