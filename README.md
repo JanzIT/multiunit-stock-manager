@@ -19,6 +19,9 @@ A mobile-first inventory management platform for multi-unit retail operations. B
 - [CSS Modules](https://nextjs.org/docs/basic-features/built-in-css-support)
 - [Figma (UI/UX)](https://figma.com)
 
+
+
+
 ## 📁 Folder Structure
 
 /pages
@@ -32,6 +35,8 @@ A mobile-first inventory management platform for multi-unit retail operations. B
 /public
 
 
+
+
 ## 🚀 Getting Started
 
 ```bash
@@ -40,34 +45,34 @@ npm install
 
 # Run development server
 npm run dev
+
+# Access the project locally
+default: - Local:        http://localhost:3000
+
+
+
+
 🔐 Environment Variables
-Create a .env.local file in the root:
+Create a .env.local file in the root of the project with the following variables (you can use .env.example as a template):
 
-env
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-❗ Never commit .env.local – it is ignored by Git for security.
+# .env.example
 
-You can use the .env.example provided in this repo to know which environment variables are required.
+# MongoDB connection string
+MONGODB_URI=your_mongodb_connection_string_here
 
-📦 Deployment
-This project is ready for deployment with Vercel. Connect your GitHub repo and add environment variables directly in the dashboard.
+# JWT secret key for authentication
+JWT_SECRET=your_jwt_secret_here
 
-👤 Author
-Renan Janz Hargreaves Vieira
-LinkedIn • Portfolio
+
+
+
+## 👤 Author
+
+Renan Janz Hargreaves Vieira  
+[LinkedIn](https://www.linkedin.com/in/renan-janz-hargreaves-vieira) 
+
+
+
 
 📜 License
 MIT
-
----
-
-## ✅ 2. `.env.example`
-
-📌 Create a file named `.env.example` in the root with:
-
-```env
-# Example environment configuration
-
-MONGODB_URI=your_mongodb_connection_string_here
-JWT_SECRET=your_jwt_secret_here
