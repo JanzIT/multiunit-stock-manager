@@ -69,7 +69,7 @@ JWT_SECRET=your_jwt_secret_here
 ## 👤 Author
 
 Renan Janz Hargreaves Vieira  
-[LinkedIn](https://www.linkedin.com/in/renan-janz-hargreaves-vieira) 
+[LinkedIn](https://www.linkedin.com/in/janzhv) 
 
 
 
